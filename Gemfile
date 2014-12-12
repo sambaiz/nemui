@@ -47,3 +47,11 @@ group :development, :test do
   gem 'poltergeist'
   gem 'database_cleaner', '~> 1.3.0'
 end
+
+group :development do
+  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'terminal-notifier-guard', '~> 1.6.1'
+  gem 'guard-livereload', require: false
+  gem 'guard-rubocop', require: false
+  gem 'guard-rspec', require: false
+end
