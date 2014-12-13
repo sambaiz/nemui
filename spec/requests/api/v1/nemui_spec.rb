@@ -13,6 +13,7 @@ describe 'Nemui API', type: :request do
 
   it 'gets worng nemui' do
     attr = {
+        name: nil
     }
     post '/api/nemui', attr
     expect(response).not_to be_success

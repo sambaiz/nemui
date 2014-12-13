@@ -13,6 +13,7 @@ describe 'Samui API', type: :request do
 
   it 'gets worng samui' do
     attr = {
+        name: nil
     }
     post '/api/samui', attr
     expect(response).not_to be_success
