@@ -55,3 +55,8 @@ group :development do
   gem 'guard-rubocop', require: false
   gem 'guard-rspec', require: false
 end
+
+gem 'grape'
+gem 'grape-jbuilder'
+gem 'grape-swagger'
+gem 'grape-swagger-rails'
