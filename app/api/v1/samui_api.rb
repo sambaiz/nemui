@@ -5,9 +5,10 @@ module V1
       desc "さむい"
       params do
         requires :name, type: String, desc: "名前"
-        requires :hash, type: String, desc: "ハッシュ"
+        optional :hash, type: String, desc: "ハッシュ"
       end
       post do
+        { message: "がんばれ" }
       end
     end
   end
